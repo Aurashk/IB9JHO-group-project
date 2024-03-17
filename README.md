@@ -30,7 +30,7 @@ will create a test called my_test which will run the my_test.cpp file. Note that
 
 # Using Git to manage your group:
 It is suggested that each group member creates their own branch to prevent clashes. Each group member can create branches in github, Just click
-branches when you are on the <> code tab of the repository. Each branch is independent from the main branch which will eventually containe your final project.
+branches when you are on the <> code tab of the repository. Each branch is independent from the main branch which will eventually contain your final project.
 
 You can add the changes from your personal branch to the main branch using pull requests. You can create these in github, go to the pull requests tab and click new pull request. Then select the branch you want to merge into the main branch. It is recommended to then have the strongest programmer in the team review these pull requests and check your code can safely be merged without breaking anything.
 
