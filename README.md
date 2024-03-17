@@ -5,9 +5,11 @@ This is a blank template for your group to implement your project in the IB9JHO 
 When you add source files to the project which you want compiled and linked to your program, you need to add them to the CMakeLists.txt file at the root of the project. 
 
 For example:
+```
 set(SRC_FILES ${CMAKE_SOURCE_DIR}/src/my_class1.cpp ${CMAKE_SOURCE_DIR}/src/my_class2.cpp)
 add_executable(my_program ${SRC_FILES} ${CMAKE_SOURCE_DIR}/src/main.cpp)
 target_link_libraries(my_program m)
+```
 
 Will create an executable called my_program by compiling my_class1.cpp, my_class2.cpp and main.cpp. Any cpp files you want to add to the project can be set in the first line.
 To keep things simple, make sure you put all source and header files in the /src directory.
@@ -18,9 +20,11 @@ There is a seperate CMakeLists.txt file in the /tests directory for adding tests
 will add a cpp file which includes catch2 (see tests/my_test.cpp for an example).
 
 Then in the CMakeLists.txt file:
+```
 add_executable(my_test ${SRC_FILES} my_test.cpp)
 target_include_directories(my_test PUBLIC ${CMAKE_SOURCE_DIR}/extern/catch2 ${CMAKE_SOURCE_DIR}/src)
 add_test(NAME my_test COMMAND my_test)
+```
 
 will create a test called my_test which will run the my_test.cpp file. Note that SRC_FILES is inherited from the main CMakeLists.txt file so your test has all the same source files as the main program.
 
