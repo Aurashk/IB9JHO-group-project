@@ -5,10 +5,11 @@
         "vscode": {
             "extensions": [
                 "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
                 "ms-vscode.cmake-tools",
-                "github.classroom",
+                "twxs.cmake",
                 "brobeson.ctest-lab",
-                "GitHub.codespaces"
+                "github.vscode-github-actions"
             ]
         }
     }
